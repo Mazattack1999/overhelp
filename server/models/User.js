@@ -25,6 +25,12 @@ const userSchema = new Schema(
                 type: Schema.Types.ObjectId,
                 ref: 'Meeting'
             }
+        ],
+        helpRequests: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Help-Request'
+            }
         ]
     }
 );

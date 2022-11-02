@@ -8,12 +8,6 @@ const meetingSchema = new Schema(
                 ref: 'User'
             }
         ],
-        applicants: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: 'User'
-            }
-        ],
         openMeeting: {
             type: Boolean,
             default: false
