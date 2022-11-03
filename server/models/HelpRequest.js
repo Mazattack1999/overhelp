@@ -2,10 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const helpRequestSchema = new Schema(
     {
-        applicants: [
+        applications: [
             {
                 type: Schema.Types.ObjectId,
-                ref: 'User'
+                ref: 'Application'
             }
         ],
         title: {

@@ -31,6 +31,12 @@ const userSchema = new Schema(
                 type: Schema.Types.ObjectId,
                 ref: 'Help-Request'
             }
+        ],
+        applications: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Application'
+            }
         ]
     }
 );
