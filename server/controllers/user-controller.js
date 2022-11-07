@@ -14,7 +14,7 @@ const userController = {
 
     // get on user by id
     getUserById({params}, res) {
-        User.findById({_id})
+        User.findById(params.id)
             .populate({
                 path: 'helpRequests'
             })
